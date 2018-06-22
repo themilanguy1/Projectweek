@@ -46,17 +46,20 @@ body {
 }
 
 .knoppie2 {
+    margin: 3em 0em;
+    padding: 0em 2em;
     background-color: #5E9BBE;
     border: 0px !important;
     border-radius: 2px;
     font-size: 24px;
-    width: 60%
+    width: 100%
 }
 
 .knoppie2:hover {
     background-color: #FF9D01;
 }
 
-.knoppiediv {
-    margin: 3em 0em;
+
+.tabelweergavediv {
+    margin-bottom: 2em;
 }

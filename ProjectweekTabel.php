@@ -38,6 +38,13 @@
                 <div class="col-sm-12 tabelweergavediv">
                     <?php tabelweergave(); ?>
                 </div>
+                <div class="col-md-12" id="tabeluitleg">
+                    <h4 class="text-center" id="tit1">gegevensanalyse</h4>
+                    <p>Tussen 1960 en 2005 is de totale alcoholconsumptie gestegen, wel met 139%.</p>
+                    <p>De consumptie van bier en wijn is gestegen maar de consumptie van gedistilleerde alcohol is gedaald.</p>
+                    <p>daarnaast is de consumptie van wijn ook gestegen met wel een factor van 13,5 !</p>
+                    <p>Ook is te zien aan de gegevens dat de alcoholconsumptie voor het eerst ontzettend steeg in de jaren 70.</p>
+                </div>
             </div>
         </div>
     </div>
