@@ -16,3 +16,9 @@ function tabelweergave() {
         echo "Geen resulaten gevonden";
     }
 }
+
+function feedback($naam, $email, $bericht) {
+    include 'connect.php';
+
+    //nog niet klaar
+}

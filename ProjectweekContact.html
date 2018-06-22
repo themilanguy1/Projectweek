@@ -26,17 +26,40 @@
                 </div>
             </div>
         </div>
-
-        <div class="wrapperdiv2">
-            <div class="row">
-                <div class="col-sm-7">
-                    <h4 class="text-center" id="tit1">Contact</h4>
-                </div>
-
-                <div class="col-xl-12 knoppiediv text-center">
-                    <a href="ProjectweekTabel.php"><button class="knoppie2">Naar Alcoholconsumptie Tabel</button></a>
-                </div>
+    </div>
+    
+    <div class="container">
+        <div class="row">
+            <div class="col-md-5">
+                <h4 class="text-center" id="tit1">Contactgegevens Go16</h4>
+                <p><b>Telefoon:</b> 01023423212</p>
+                <p><b>Adres:</b> niemandsstraat 57a</p>
+                <p><b>Postcode:</b> 3011 XJ</p>
+                <p><b>Plaats: </b>Rotterdam</p>
             </div>
+            <div class="col-md-7">
+                <h4 class="text-center" id="tit1">Contact opnemen met ons</h4>
+                <form id="stadform" method="POST" action="controller.php">
+                    <div class="form-group">
+                        <label>Vul uw naam in</label>
+                        <input name="naaminput" class="form-control" type="text" placeholder="Naam Achternaam" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Vul uw emailadres in</label>
+                        <input name="emailinput" class="form-control" type="email" placeholder="voorbeeld@email.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Vul uw bericht in</label>
+                        <input name="berichtinput" class="form-control" type="text" value="">
+                        <small class="form-text text-muted">U mag dit veld leeglaten als u alleen uw contactinformatie op wilt sturen.</small>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Versturen</button>
+                </form>
+            </div>
+            <div class="col-xl-12 knoppiediv text-center">
+                <a href="ProjectweekTabel.php"><button class="knoppie2">Naar Alcoholconsumptie Tabel</button></a>
+            </div>
+        </div>
         </div>
     </div>
 </body>
