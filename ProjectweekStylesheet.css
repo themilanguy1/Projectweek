@@ -2,6 +2,7 @@
 
 body {
     font-family: 'Open Sans', sans-serif;
+    background-color: rgb(244, 235, 245);
 }
 
 .titmain {
@@ -24,6 +25,9 @@ body {
     color: #FFF
 }
 
+.knoppie:hover {
+    background-color: #1870A0;
+}
 #basimage {
     height: 15px;
     width: 15px;
@@ -31,4 +35,28 @@ body {
 
 .wrapperdiv {
     background-color: #5E9BBE;
+}
+
+#imagemain {
+    width: 95%
+}
+
+.wrapperdiv2 {
+    padding: 1em;
+}
+
+.knoppie2 {
+    background-color: #5E9BBE;
+    border: 0px !important;
+    border-radius: 2px;
+    font-size: 24px;
+    width: 60%
+}
+
+.knoppie2:hover {
+    background-color: #FF9D01;
+}
+
+.knoppiediv {
+    margin: 3em 0em;
 }

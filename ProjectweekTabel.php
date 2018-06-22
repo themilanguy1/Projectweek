@@ -1,3 +1,7 @@
+<?php
+    include 'functions.php';
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -19,30 +23,20 @@
                 <div class="col-sm-6 text-center">
                     <h3 class="titmain text-center">Alcohol & Drugs</h3>
                     <br>
-                    <h5 id="tit1">Inleiding</h5>
+                    <h5 id="tit1">Consumptietabel</h5>
                 </div>
                 <div class="col-sm-3 text-center">
                     <a href="ProjectweekContact.html"><button class="knoppie">Contact</button></a>
                 </div>
             </div>
         </div>
+    </div>
 
+    <div class="container">
         <div class="wrapperdiv2">
             <div class="row">
-                <div class="col-sm-7">
-                    <h4 class="text-center" id="tit1">Genotsmiddelen</h4>
-                    <p>Genotsmiddelen zijn dingen die je eet drinkt, rookt of op een andere manier gebruikt en een aangename of stimulerende werking hebben</p>
-                    <p>Op deze website gaan wij het voornamelijk hebben over <b>alcohol</b> en <b>drugs</b></p>
-                    <p>Alcohol- en drugsgebruik</p>
-                </div>
-
-                <div class="col-sm-5 imagediv">
-                    <img class="img-fluid" id="imagemain" src="xtc.jpg">
-                    <img class="img-fluid" id="imagemain" src="drinkingbeer.jpg">
-                </div>
-
-                <div class="col-xl-12 knoppiediv text-center">
-                    <a href="ProjectweekTabel.php"><button class="knoppie2">Naar Alcoholconsumptie Tabel</button></a>
+                <div class="col-sm-12 tabelweergavediv">
+                    <?php tabelweergave(); ?>
                 </div>
             </div>
         </div>
