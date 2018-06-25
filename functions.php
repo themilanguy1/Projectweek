@@ -26,7 +26,7 @@ function feedback($naam, $email, $bericht) {
         VALUES ('$naam', '$email', '$bericht')";
         
         if ($conn->query($sql) === TRUE) {
-            header('Location: ProjectweekContact.html');
+            header('Location: verzonden.html');
             echo "";
         } else {
             echo "woops";
