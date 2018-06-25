@@ -17,9 +17,7 @@
             </div>
             <div class="col-xl-12">
                 <a class="knoppie" href="ProjectweekTabel.php">
-                    <button class="btn btn-primary">
-                        Terug naar home
-                    </button>
+                    <button class="btn btn-primary">Terug naar home</button>
                 </a>
             </div>    
         </div>

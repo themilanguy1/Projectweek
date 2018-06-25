@@ -35,28 +35,34 @@ if(ISSET($_GET['id'])) {
             </div>
         </div>
     </div>
+    <br>
     <div class="container">
         <div class="row">
             <div class="col-md-12">
                 <form id="wijzigtabelform" method="POST" action="controller.php?wijzig_id=<?php echo $id; ?> ">
                     <div class="form-row">
                         <div class="col">
-                            <input class="form-control" type="number" name="jaarinput" required placeholder="Jaar">
+                            <label>jaar</label>
+                            <input class="form-control" type="number" name="jaarinput2" required value="<?php tempvalue($id, "jaar") ?>">
                         </div>
                         <div class="col">
-                            <input class="form-control" type="number" step=".1" name="bierinput" required placeholder="Bier">
+                            <label class="text-center">Bier</label>
+                            <input class="form-control" type="number" step=".1" name="bierinput2" required value="<?php tempvalue($id, "bier") ?>">
                         </div>
                         <div class="col">
-                            <input class="form-control" type="number" step=".1" name="wijninput" required placeholder="Wijn">
+                            <label>Wijn</label>
+                            <input class="form-control" type="number" step=".1" name="wijninput2" required value="<?php tempvalue($id, "wijn") ?>">
                         </div>
                         <div class="col">
-                            <input class="form-control" type="number" step=".1" name="gedistilleerdinput" required placeholder="Gedistilleerd">
+                            <label>Gedistilleerd</label>
+                            <input class="form-control" type="number" step=".1" name="gedistilleerdinput2" required value="<?php tempvalue($id, "gedistilleerd") ?>">
                         </div>
-                            <button type="submit" class="btn btn-primary">Rij invoegen</button>
-                        </div>  
                     </div>
-                    <button type="submit" class="btn btn-primary">Wijziging bevestigen</button>
-                    <a href="SQLhome.php"><button type="button" class="btn btn-primary">Annuleren</button></a>
+                    <br>
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-primary">Wijziging bevestigen</button> 
+                        <a href="ProjectweekTabel.php"><button type="button" class="btn btn-primary">Annuleren</button></a>
+                    </div>
                 </form>
             </div>
         </div>

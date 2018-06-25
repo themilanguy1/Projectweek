@@ -1,10 +1,4 @@
 <?php
-function redirect($link) {
-    echo '<script type="text/javascript">';
-    echo 'window.location.href='.$link.';';
-    echo '</script>';   
-}
-
 function tabelweergave() {
     include 'connect.php';
 
@@ -53,5 +47,37 @@ function rijinvoegen($jaar, $bier, $wijn, $gedistilleerd) {
                 }
             }
         
+    }
+}
+
+function rijwijzigen($jaar, $bier, $wijn, $gedistilleerd) {
+    include 'connect.php';
+    if(ISSET($_GET['wijzig_id'])) {
+        $wijzig_id = $_GET['wijzig_id'];
+        if(isset($_POST['jaarinput2'])) {
+            $sql = "UPDATE alcoholconsumptie 
+                    SET jaar = '$jaar', 
+                    bier = '$bier',
+                    wijn = '$wijn',
+                    gedistilleerd = '$gedistilleerd'
+                    WHERE id= $wijzig_id";
+            if ($conn->query($sql) === TRUE) {
+                header('Location: ProjectweekTabel.php');
+                echo "";
+            } else {
+                echo "";
+            }
+        }
+    }
+}
+
+function tempvalue($wijzig_id, $parameter) {
+    include 'connect.php';
+    $sql = "SELECT * FROM alcoholconsumptie WHERE id = ". $wijzig_id. "";
+    $result = mysqli_query($conn, $sql);
+    if (mysqli_num_rows($result) > 0) { 
+        while($row = mysqli_fetch_assoc($result)) {
+            echo $row["$parameter"]; 
+        }
     }
 }

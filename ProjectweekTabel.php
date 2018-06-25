@@ -54,6 +54,7 @@
                             <div class="col">
                                 <input class="form-control" type="number" step=".1" name="gedistilleerdinput" required placeholder="Gedistilleerd">
                             </div>
+                            <div class="col">
                                 <button type="submit" class="btn btn-primary">Rij invoegen</button>
                             </div>  
                         </div>
