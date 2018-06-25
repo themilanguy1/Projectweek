@@ -11,7 +11,7 @@ function tabelweergave() {
             $gedistilleerd2 = number_format(($row["gedistilleerd"] / 8 * 7), 1);
             $totaal = ($row["bier"]) + $row["wijn"] + $gedistilleerd2;
             $wijn2 = number_format($row["wijn"] / $totaal * 100, 1);
-            echo "<tr> <td>".$row["jaar"]."</td> <td>".$row["bier"]."</td> <td>".$row["wijn"]."</td> <td>".$row["gedistilleerd"]."</td> <td>$totaal</td> <td>$gedistilleerd2</td> <td>$wijn2%</td> <td><a style='font-size: 25px;' class='fas fa-edit' href='wijzigtabel.php?id=".$row["id"]."'></a></td> </tr>";
+            echo "<tr> <td>".$row["jaar"]."</td> <td>".$row["bier"]."</td> <td>".$row["wijn"]."</td> <td>".$row["gedistilleerd"]."</td> <td>$totaal</td> <td>$gedistilleerd2</td> <td>$wijn2%</td> <td><a style='font-size: 1.5em;' class='fas fa-edit' href='wijzigtabel.php?id=".$row["id"]."'></a></td> </tr>";
         }
         echo "</tbody></table>";
     } else {
