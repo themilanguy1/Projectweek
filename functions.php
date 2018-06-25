@@ -21,8 +21,17 @@ function tabelweergave() {
 
 function feedback($naam, $email, $bericht) {
     include 'connect.php';
-
-    //nog niet klaar
+    if(isset($_POST['naaminput'])) {
+        $sql = "INSERT INTO contactfeedback (naam, email, bericht)
+        VALUES ('$naam', '$email', '$bericht')";
+        
+        if ($conn->query($sql) === TRUE) {
+            header('Location: ProjectweekContact.html');
+            echo "";
+        } else {
+            echo "woops";
+        }
+    }
 }
 
 function rijinvoegen($jaar, $bier, $wijn, $gedistilleerd) {
@@ -33,7 +42,7 @@ function rijinvoegen($jaar, $bier, $wijn, $gedistilleerd) {
                 die('Error: ' . mysqli_error($conn));
             } else { 
                 if(mysqli_num_rows($query) > 0){
-                    header('Location: error.php');
+                    header('Location: error.html');
                     } else {
                         $sql = "INSERT INTO alcoholconsumptie (jaar, bier, wijn, gedistilleerd)
                         VALUES ('$jaar', '$bier', '$wijn', '$gedistilleerd')";

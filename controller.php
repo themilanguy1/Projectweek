@@ -1,10 +1,9 @@
 <?php
 include 'functions.php';
 if(isset($_POST['naaminput'])) {
-
-    $_POST['naaminput'] = $naam;
-    $_POST['emailinput'] = $email;
-    $_POST['berichtinput'] = $bericht;
+    $naam =  $_POST['naaminput'];
+    $email = $_POST['emailinput'];
+    $bericht = $_POST['berichtinput'];
     feedback($naam, $email, $bericht);
 }
 
