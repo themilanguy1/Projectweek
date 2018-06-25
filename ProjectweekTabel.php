@@ -35,6 +35,32 @@
     <div class="container">
         <div class="wrapperdiv2">
             <div class="row">
+                <div class="col-md-12">
+                    <h5>Met dit formulier kunt u een nieuwe rij toevoegen aan de tabel.</h5>
+                    <p>Let op: u kunt alleen een nieuwe rij toevoegen met een jaartal dat nog niet bestaat.</p>
+                </div>
+                <div class="col-md-12">
+                    <form id="nieuwrijform" method="POST" action="controller.php">
+                        <div class="form-row">
+                            <div class="col">
+                                <input class="form-control" type="number" name="jaarinput" required placeholder="Jaar">
+                            </div>
+                            <div class="col">
+                                <input class="form-control" type="number" step=".1" name="bierinput" required placeholder="Bier">
+                            </div>
+                            <div class="col">
+                                <input class="form-control" type="number" step=".1" name="wijninput" required placeholder="Wijn">
+                            </div>
+                            <div class="col">
+                                <input class="form-control" type="number" step=".1" name="gedistilleerdinput" required placeholder="Gedistilleerd">
+                            </div>
+                                <button type="submit" class="btn btn-primary">Rij invoegen</button>
+                            </div>  
+                        </div>
+                    </form>
+                </div>
+                <br>
+                <br>
                 <div class="col-sm-12 tabelweergavediv">
                     <?php tabelweergave(); ?>
                 </div>
