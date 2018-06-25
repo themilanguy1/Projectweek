@@ -62,8 +62,14 @@
                 </div>
                 <br>
                 <br>
+                <br>
                 <div class="col-sm-12 tabelweergavediv">
+                    <h4 class="text-center">Alcohol consumptie</h4>
                     <?php tabelweergave(); ?>
+                </div>
+                <div class="col-sm-12 tabelweergavediv">
+                    <h4 class="text-center">Gemiddelde alcohol consumptie</h4>
+                    <?php gemiddelde(); ?>
                 </div>
                 <div class="col-md-12" id="tabeluitleg">
                     <h4 class="text-center" id="tit1">gegevensanalyse</h4>
