@@ -55,7 +55,7 @@ $(document).ready(function(){
 			}
 
 			var chartdata = {
-				labels: jaar,
+                labels: jaar,
 				datasets : [
 					{
 						label: "Bier", 
@@ -64,7 +64,7 @@ $(document).ready(function(){
                     }, 
                     {
 						label: "Wijn", 
-                        borderColor: 'rgb(43, 255, 1, 0.7)',
+                        borderColor: 'rgb(255, 251, 1, 0.7)',
 						data: wijn
                     },
                     {
@@ -77,9 +77,19 @@ $(document).ready(function(){
 
 			var ctx = document.getElementById("myChart");
 
-			var barGraph = new Chart(ctx, {
+			var linegraph = new Chart(ctx, {
 				type: 'line',
-				data: chartdata
+                data: chartdata,
+                options: {
+                    scales: {
+                        yAxes: [{
+                            ticks: {
+                                min: 0,
+                                stepSize: 0.5,
+                            }
+                        }]
+                    }
+                },
 			});
 		},
 		error: function(data) {
