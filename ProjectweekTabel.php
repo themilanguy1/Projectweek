@@ -71,11 +71,17 @@
                     <h4 class="text-center">Gemiddelde alcohol consumptie</h4>
                     <?php gemiddelde(); ?>
                 </div>
-                <div class="col-sm-12">
+                <div class="col-sm-6">
+                    <h4 class="text-center">Grafiek alcohol consumptie</h4>
+                </div>
+                <div class="col-sm-6">
+                    <h4 class="text-center">Gegevensanalyse</h4>
+                </div>
+                <div class="col-sm-6">
                     <canvas id="myChart" width="400" height="400"></canvas>
                 </div>
-                <div class="col-md-12" id="tabeluitleg">
-                    <h4 class="text-center" id="tit1">gegevensanalyse</h4>
+                <div class="col-md-6" id="tabeluitleg">
+                    <br>
                     <p>Tussen 1960 en 2005 is de totale alcoholconsumptie gestegen, wel met 139%.</p>
                     <p>De consumptie van bier en wijn is gestegen maar de consumptie van gedistilleerde alcohol is gedaald.</p>
                     <p>daarnaast is de consumptie van wijn ook gestegen met wel een factor van 13,5 !</p>

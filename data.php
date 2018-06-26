@@ -16,7 +16,7 @@ if(!$mysqli){
 }
 
 //query to get data from the table
-$query = sprintf("SELECT jaar, bier, wijn, gedistilleerd FROM alcoholconsumptie ORDER BY jaar ASC");
+$query = sprintf("SELECT jaar, bier, wijn, gedistilleerd FROM alcoholconsumptie ORDER BY jaar");
 
 //execute query
 $result = $mysqli->query($query);
