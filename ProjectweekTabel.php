@@ -71,6 +71,9 @@
                     <h4 class="text-center">Gemiddelde alcohol consumptie</h4>
                     <?php gemiddelde(); ?>
                 </div>
+                <div class="col-sm-12">
+                    <canvas id="myChart" width="400" height="400"></canvas>
+                </div>
                 <div class="col-md-12" id="tabeluitleg">
                     <h4 class="text-center" id="tit1">gegevensanalyse</h4>
                     <p>Tussen 1960 en 2005 is de totale alcoholconsumptie gestegen, wel met 139%.</p>
@@ -81,5 +84,8 @@
             </div>
         </div>
     </div>
+<script src="jquery-3.3.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+<script type="text/javascript" src="grafiek.js"></script>
 </body>
 </html>
