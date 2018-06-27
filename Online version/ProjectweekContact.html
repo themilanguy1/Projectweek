@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contact</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
+    <link rel="stylesheet" href="ProjectweekStylesheet.css">
+</head>
+<body>
+    <div class="container-flex">
+        <div class="wrapperdiv">
+            <div class="row">
+                <div class="col-sm-3 text-center">
+                    <a href="ProjectweekHome.html"><button class="knoppie">Home</button></a>
+                </div>
+                <div class="col-sm-6 text-center">
+                    <h3 class="titmain text-center">Alcohol & Drugs</h3>
+                    <br>
+                    <h5 id="tit1">Contact</h5>
+                </div>
+                <div class="col-sm-3 text-center">
+                    <a href="ProjectweekContact.html"><button class="knoppie">Contact</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container">
+        <div class="row">
+            <div class="col-md-5">
+                <h4 class="text-center" id="tit1">Contactgegevens Go16</h4>
+                <p><b>Telefoon:</b> 01023423212</p>
+                <p><b>Adres:</b> niemandsstraat 57a</p>
+                <p><b>Postcode:</b> 3011 XJ</p>
+                <p><b>Plaats: </b>Rotterdam</p>
+            </div>
+            <div class="col-md-7">
+                <h4 class="text-center" id="tit1">Contact opnemen met ons</h4>
+                <form id="contactform" method="POST" action="controller.php">
+                    <div class="form-group">
+                        <label>Vul uw naam in</label>
+                        <input name="naaminput" class="form-control" type="text" placeholder="Naam Achternaam" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Vul uw emailadres in</label>
+                        <input name="emailinput" class="form-control" type="email" placeholder="voorbeeld@email.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Vul uw bericht in</label>
+                        <input name="berichtinput" class="form-control" type="text" value="" placeholder="...">
+                        <small class="form-text text-muted">U mag dit veld leeglaten als u alleen uw contactinformatie op wilt sturen.</small>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Versturen</button>
+                </form>
+            </div>
+            <div class="col-xl-12 knoppiediv text-center">
+                <a href="ProjectweekTabel.php"><button class="knoppie2">Naar Alcoholconsumptie Tabel</button></a>
+            </div>
+        </div>
+        </div>
+    </div>
+</body>
+</html>
