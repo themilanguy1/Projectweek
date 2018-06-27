@@ -3,7 +3,6 @@
 body {
     font-family: 'Open Sans', sans-serif;
     background-color: rgb(244, 235, 245);
-    margin: 0px;
 }
 
 .titmain {
@@ -65,16 +64,3 @@ body {
 .tabelweergavediv {
     margin-bottom: 2em;
 }
-
-@media (min-width: 768px){
-    .container{
-      max-width:80%;
-    }  
-  }
-  
-  @media (min-width: 992px){
-    .container{
-      max-width:80%;
-    }
-  }
-  share

@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="ProjectweekStylesheet.css">
 </head>
 <body>
-    <div class="container-flex">
+<div class="container-flex">
         <div class="wrapperdiv">
             <div class="row">
                 <div class="col-sm-3 text-center">
@@ -37,7 +37,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <h5>Met dit formulier kunt u een nieuwe rij toevoegen aan de tabel.</h5>
-                    <p>Let op: u kunt alleen een nieuwe rij toevoegen met een jaartal dat nog niet bestaat.</p>
+                    <small class="form-text text-muted">Let op: u kunt alleen een nieuwe rij toevoegen met een jaartal dat nog niet bestaat.</small>
                 </div>
                 <div class="col-md-12">
                     <form id="nieuwrijform" method="POST" action="controller.php">
