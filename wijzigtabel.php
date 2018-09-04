@@ -22,7 +22,7 @@ if(ISSET($_GET['id'])) {
         <div class="wrapperdiv">
             <div class="row">
                 <div class="col-sm-3 text-center">
-                    <a href="ProjectweekHome.html"><button class="knoppie">Home</button></a>
+                    <a href="index.html"><button class="knoppie">Home</button></a>
                 </div>
                 <div class="col-sm-6 text-center">
                     <h3 class="titmain text-center">Alcohol & Drugs</h3>
